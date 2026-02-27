@@ -12,7 +12,7 @@ import java.util.List;
 public class TodoPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
-
+    //Pagina de tareas
     @FindBy(id = "todo-title-input") private WebElement titleInput;
     @FindBy(id = "add-todo-btn") private WebElement addButton;
     @FindBy(css = ".todo-item") private List<WebElement> todoItems;
@@ -80,3 +80,4 @@ public class TodoPage {
         return errorMessage.getText();
     }
 }
+
